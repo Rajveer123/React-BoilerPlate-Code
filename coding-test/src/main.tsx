@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client';
 
 import { ReactQueryProvider } from '@lib/react-query';
 
+import '@i18n/config'; // Initialize i18n
 import App from './App';
 import theme from './theme/theme';
 import './App.css';

@@ -1,0 +1,80 @@
+{
+  "common": {
+    "loading": "Laddar...",
+    "error": "Fel",
+    "success": "Framgång",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "delete": "Radera",
+    "edit": "Redigera",
+    "refresh": "Uppdatera",
+    "retry": "Försök igen",
+    "tryAgain": "Försök igen",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "previous": "Föregående",
+    "search": "Sök",
+    "filter": "Filtrera",
+    "close": "Stäng",
+    "confirm": "Bekräfta",
+    "yes": "Ja",
+    "no": "Nej"
+  },
+  "app": {
+    "name": "React Boilerplate",
+    "welcome": "Välkommen till React Boilerplate",
+    "description": "En modern, produktionsklar React-applikationsmall"
+  },
+  "home": {
+    "title": "Välkommen till React Boilerplate",
+    "subtitle": "En modern, produktionsklar React-applikationsmall",
+    "featuresTitle": "Denna boilerplate innehåller:",
+    "features": {
+      "typescript": "TypeScript-stöd",
+      "router": "React Router DOM",
+      "mui": "Material-UI-teman",
+      "errorBoundaries": "Felgränser",
+      "codeSplitting": "Koduppdelning med Suspense",
+      "axios": "Axios API-klient",
+      "reactQuery": "React Query-datahämtning",
+      "featureFirst": "Funktionsförst mappstruktur"
+    },
+    "viewEmployees": "Visa medarbetarfunktion"
+  },
+  "employees": {
+    "title": "Medarbetarkatalog",
+    "subtitle": "Hantera teaminformation, avdelningar och ersättning",
+    "loading": "Laddar medarbetare",
+    "error": "Kunde inte ladda medarbetare",
+    "errorMessage": "Kontrollera din nätverksanslutning eller försök igen senare.",
+    "teamMembers": "teammedlemmar",
+    "teamMembersCount": "{{count}} teammedlemmar",
+    "mockDataNotice": "Data tillhandahålls av mocktjänst. Anslut din API genom att ange `VITE_API_BASE_URL`.",
+    "table": {
+      "employee": "Medarbetare",
+      "jobTitle": "Jobbtitel",
+      "department": "Avdelning",
+      "location": "Plats",
+      "salary": "Lön",
+      "hireDate": "Anställningsdatum",
+      "noEmployees": "Inga medarbetare hittades."
+    }
+  },
+  "error": {
+    "boundary": {
+      "title": "Något gick fel",
+      "message": "Vi beklagar, men något oväntat hände. Försök uppdatera sidan."
+    },
+    "notFound": {
+      "title": "Sidan hittades inte",
+      "message": "Sidan du letar efter finns inte.",
+      "goHome": "Gå till startsidan"
+    }
+  },
+  "language": {
+    "switch": "Växla språk",
+    "english": "English",
+    "swedish": "Svenska"
+  }
+}
+

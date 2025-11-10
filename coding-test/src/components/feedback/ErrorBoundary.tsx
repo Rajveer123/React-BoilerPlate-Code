@@ -1,11 +1,12 @@
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import { Box, Button, Paper, Typography } from '@mui/material';
 import { Component, type ErrorInfo, type ReactNode } from 'react';
+import { withTranslation, type WithTranslation } from 'react-i18next';
 
 import env from '@config/env';
 import logger from '@lib/logger';
 
-interface Props {
+interface Props extends WithTranslation {
   children: ReactNode;
   fallback?: ReactNode;
 }
@@ -74,10 +75,10 @@ class ErrorBoundary extends Component<Props, State> {
           >
             <ErrorOutlineIcon sx={{ fontSize: 64, color: 'error.main', mb: 2 }} />
             <Typography variant="h4" gutterBottom color="error">
-              Something went wrong
+              {this.props.t('error.boundary.title')}
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-              We're sorry, but something unexpected happened. Please try refreshing the page.
+              {this.props.t('error.boundary.message')}
             </Typography>
             {env.isDev && this.state.error && (
               <Box
@@ -96,7 +97,7 @@ class ErrorBoundary extends Component<Props, State> {
               </Box>
             )}
             <Button variant="contained" color="primary" onClick={this.handleReset} sx={{ mt: 3 }}>
-              Try Again
+              {this.props.t('common.tryAgain')}
             </Button>
           </Paper>
         </Box>
@@ -107,4 +108,5 @@ class ErrorBoundary extends Component<Props, State> {
   }
 }
 
-export default ErrorBoundary;
+const ErrorBoundaryWithTranslation = withTranslation()(ErrorBoundary);
+export default ErrorBoundaryWithTranslation;

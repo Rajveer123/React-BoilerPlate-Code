@@ -1,0 +1,80 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "refresh": "Refresh",
+    "retry": "Retry",
+    "tryAgain": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "app": {
+    "name": "React Boilerplate",
+    "welcome": "Welcome to React Boilerplate",
+    "description": "A modern, production-ready React application template"
+  },
+  "home": {
+    "title": "Welcome to React Boilerplate",
+    "subtitle": "A modern, production-ready React application template",
+    "featuresTitle": "This boilerplate includes:",
+    "features": {
+      "typescript": "TypeScript support",
+      "router": "React Router DOM",
+      "mui": "Material-UI theming",
+      "errorBoundaries": "Error boundaries",
+      "codeSplitting": "Code splitting with Suspense",
+      "axios": "Axios API client",
+      "reactQuery": "React Query data fetching",
+      "featureFirst": "Feature-first folder structure"
+    },
+    "viewEmployees": "View Employees Feature"
+  },
+  "employees": {
+    "title": "Employee Directory",
+    "subtitle": "Manage team information, departments, and compensation",
+    "loading": "Loading employees",
+    "error": "Unable to load employees",
+    "errorMessage": "Please check your network connection or try again later.",
+    "teamMembers": "team members",
+    "teamMembersCount": "{{count}} team members",
+    "mockDataNotice": "Data provided by mock service. Connect your API by setting `VITE_API_BASE_URL`.",
+    "table": {
+      "employee": "Employee",
+      "jobTitle": "Job Title",
+      "department": "Department",
+      "location": "Location",
+      "salary": "Salary",
+      "hireDate": "Hire Date",
+      "noEmployees": "No employees found."
+    }
+  },
+  "error": {
+    "boundary": {
+      "title": "Something went wrong",
+      "message": "We're sorry, but something unexpected happened. Please try refreshing the page."
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for doesn't exist.",
+      "goHome": "Go to Home"
+    }
+  },
+  "language": {
+    "switch": "Switch Language",
+    "english": "English",
+    "swedish": "Svenska"
+  }
+}
+

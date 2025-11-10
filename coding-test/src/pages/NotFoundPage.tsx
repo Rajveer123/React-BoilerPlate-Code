@@ -1,11 +1,13 @@
 import NotFoundIcon from '@mui/icons-material/ErrorOutline';
 import { Box, Button, Container, Paper, Typography } from '@mui/material';
 import { type ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import { ROUTES } from '@config/routes';
 
 function NotFoundPage(): ReactElement {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
@@ -24,10 +26,10 @@ function NotFoundPage(): ReactElement {
             404
           </Typography>
           <Typography variant="h5" color="text.secondary" gutterBottom>
-            Page Not Found
+            {t('error.notFound.title')}
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-            The page you're looking for doesn't exist or has been moved.
+            {t('error.notFound.message')}
           </Typography>
           <Button
             variant="contained"
@@ -35,7 +37,7 @@ function NotFoundPage(): ReactElement {
             onClick={() => navigate(ROUTES.home)}
             size="large"
           >
-            Go to Home
+            {t('error.notFound.goHome')}
           </Button>
         </Paper>
       </Box>

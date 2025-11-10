@@ -12,6 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 import { type ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { formatCurrency, formatDate, getInitials } from '@utils/format';
 
@@ -22,17 +23,19 @@ interface EmployeeTableProps {
 }
 
 function EmployeeTable({ employees }: EmployeeTableProps): ReactElement {
+  const { t } = useTranslation();
+
   return (
     <TableContainer component={Paper} elevation={2}>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Employee</TableCell>
-            <TableCell>Job Title</TableCell>
-            <TableCell>Department</TableCell>
-            <TableCell>Location</TableCell>
-            <TableCell align="right">Salary</TableCell>
-            <TableCell>Hire Date</TableCell>
+            <TableCell>{t('employees.table.employee')}</TableCell>
+            <TableCell>{t('employees.table.jobTitle')}</TableCell>
+            <TableCell>{t('employees.table.department')}</TableCell>
+            <TableCell>{t('employees.table.location')}</TableCell>
+            <TableCell align="right">{t('employees.table.salary')}</TableCell>
+            <TableCell>{t('employees.table.hireDate')}</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -86,7 +89,7 @@ function EmployeeTable({ employees }: EmployeeTableProps): ReactElement {
       {employees.length === 0 && (
         <Box sx={{ p: 4, textAlign: 'center' }}>
           <Typography variant="body1" color="text.secondary">
-            No employees found.
+            {t('employees.table.noEmployees')}
           </Typography>
         </Box>
       )}
